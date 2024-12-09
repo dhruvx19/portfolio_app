@@ -1,59 +1,433 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Dhruv Balchandani, portfolio" />
+  <!-- <meta name="description" content="Welcome to Dhruv's Portfolio. Full-Stack Web Developer and Android App Developer" /> -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="2.jpg"/>
-
-  <title>flutter_portfolio</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "4059096168";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.ico">
+  <title>Portfolio | Dhruv Balchandani</title>
 </head>
-<body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+
+<body oncontextmenu="return false">
+
+  <!-- pre loader -->
+  <!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+  <!-- navbar starts -->
+  <header>
+    <a href="/" class="logo"><img src="./logo.svg"></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
+
+
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <h2>Hi There,<br /> I'm <span>Dhruv Balchandani</span></h2>
+      <p>i am into <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/dhruvbalchandani/"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/dhruvx19/" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/dhruvx19" target="_blank"><i
+                class="fab fa-twitter"></i></a></li>
+          <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/_dhruvx19/"><i
+                class="fab fa-instagram" target="_blank"></i></a></li>
+          <!-- <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/my-avatar.png" alt="">
+    </div>
+  </section>
+  <!-- hero section ends -->
+
+
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+    <div class="row">
+
+      <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/dhruv.png" alt="">
+      </div>
+      <div class="content">
+        <h3>I'm Dhruv Balchandani</h3>
+        <span class="tag">Mobile Application Developer | Kotlin | flutter | Springboot | DSA </span>
+
+        <p>
+          I'm Dhruv Balchandani, an aspiring software engineer with 8+ months of internship experience at Smollan and Manastik. Skilled in Flutter, Kotlin, Spring Boot, and Data Structures (C++), I excel in building responsive mobile apps and robust backend solutions. Passionate about solving complex problems, I thrive on creating scalable, user-centric applications.
+
+During my internships, I contributed to healthcare and enterprise apps, enhancing performance through API integrations and innovative features. I actively collaborate with teams to deliver impactful solutions within deadlines. Dedicated to continuous learning, I’m exploring software architecture and emerging technologies to grow as a developer.
+        </p>
+
+        <div class="box-container">
+          <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+          <div class="box">
+            <p><span> email : </span> dhruvbalchandani1@gmail.com</p>
+            <p><span> place : </span> New Delhi, India</p>
+          </div>
+        </div>
+
+        <div class="resumebtn">
+          <a href="https://drive.google.com/file/d/1rJ1b2bRAS9ukHpY8FruYQBmSHviH7fpO/view?usp=sharing" target="_blank"
+            class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
+
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+      <div class="row" id="skillsContainer">
+
+        <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- skills section ends -->
+
+
+  <!-- education section starts -->
+  <section class="education" id="education">
+
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false"
+            src="https://image-static.collegedunia.com/public/college_data/images/appImage/14962174791443707268KIETNew.jpg?h=260&w=360&mode=crop"
+            alt="">
+        </div>
+        <div class="content">
+          <h3>Bachelor of Technology in <I>Information Technology</I> Engineering</h3>
+          <p>KIET Group of Institutions ,&nbsp;Ghaziabad | Uttar Pradesh</p>
+          <p>CGPA - 8.31 (Aggregate)</p>
+          <h4>2022-2026 | Pursuing</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDzhVLGOVUsW5GDI9s2kTs7v9eIHXZNJkyJg&s" alt="">
+        </div>
+        <div class="content">
+          <h3>AISSE (PCM)</h3>
+          <p>Divine Sainik School, Varanasi</p>
+          <p>Percentage - 83%</p>
+          <h4>2019-2021 | Completed</h4>
+        </div>
+      </div>
+      <!-- <div class="box">
+        <div class="image">
+          <img draggable="false" src="https://lh5.googleusercontent.com/p/AF1QipMdx2pBPhAAPixUIv04bRFjcIomp2X5F-djsS_2=w533-h240-k-no" alt="">
+        </div>
+        <div class="content">
+          <h3>SSC</h3>
+          <p>Saraswat Central Public School, Saoner, Nagpur</p>
+          <p>Percentage - 92%</p>
+          <h4>2007-2018 | Completed</h4>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- education section ends -->
+
+
+  <!-- work project section starts -->
+  <section class="work" id="work">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+    <div class="box-container">
+
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/grabbits.png" alt="" />
+        <div class="content">
+          <div class="tag">
+            <h3>Grabbits</h3>
+          </div>
+          <div class="desc">
+            <ul style="font-size: 12px; padding: 5px;">
+              <li>A platform to find job opportunities for all college students as well as working professionals</li>
+              <li>Designed complete website on Figma</li>
+              <li>Worked on frontend of the website using Reactjs and Modular CSS</li>
+              <li>More than 1000+ overall users of the website</li>
+            </ul>
+            <div class="btns">
+              <a href="https://grabbits.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/GrabBits/GrabBits_Website" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/draic.png" alt="" />
+        <div class="content">
+          <div class="tag">
+            <h3>Sambhav DYPCOE</h3>
+          </div>
+          <div class="desc">
+            <ul style="font-size: 12px; padding: 5px;">
+              <li>Designed complete website for our club from scratch with my role being in the frontend</li>
+              <li>Implemented animations and css part as well as responsiveness of the website</li>
+              <li>Features includes tons of animations for audience and a complete information related to the website
+              </li>
+            </ul>
+            <div class="btns">
+              <a href="https://www.draicdypcoe.in" class="btn" target="_blank"><i class="fas fa-eye"></i>
+                View</a>
+              <a href="https://github.com/aryanjangid/DRAIC-Website" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div> -->
+
+  </section>
+  <!-- work project section ends -->
+
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
+
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+    <div class="timeline">
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Smollan</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Engineer Intern | Internship</h3>
+            <p>September 2024 - Present</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Manastik</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Engineer Intern | Internship</h3>
+            <p>May 2024 - September 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Oppia foundation</h2>
+          </div>
+          <div class="desc">
+            <h3>Lead</h3>
+            <p>April 2023 - March 2024</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="morebtn">
+      <a href="/experience" class="btn"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    </div>
+
+  </section>
+  <!-- experience section ends -->
+
+  <!-- contact section starts -->
+  <!-- <section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section> -->
+  <!-- contact section ends -->
+
+
+  <!-- footer section starts -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Dhruv's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
+          🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+91 7007308462</p>
+        <p> <i class="fas fa-envelope"></i>dhruvbalchandani1@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>New Delhi, India</p>
+        <div class="share">
+
+          <a href="https://www.linkedin.com/in/dhruvbalchandani/" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/dhruvx19" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="mailto:dhruvbalchandani1@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+          <a href="https://twitter.com/dhruvx19" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/dhruvbalchandani/"> Dhruv Balchandani</a></h1>
+
+  </section>
+  <!-- footer section ends -->
+
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
+
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
